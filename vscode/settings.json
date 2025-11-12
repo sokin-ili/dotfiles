@@ -1,0 +1,282 @@
+{
+    "workbench.editor.pinnedTabsOnSeparateRow": true,
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.colorTheme": "Theme",
+    "python.terminal.activateEnvInCurrentTerminal": true,
+    "terminal.integrated.customGlyphs": true,
+    "notebook.cellToolbarLocation": {
+        "default": "right",
+        "jupyter-notebook": "left"
+    }, 
+    // "terminal.integrated.fontFamily": "monospace",
+    // "editor.fontFamily": "\"JetBrains Mono\", Menlo, Monaco, \"Courier New\", monospace",
+    // "editor.fontFamily": "'JetBrains Mono', Menlo, Monaco, 'Courier New', monospace",
+    // "editor.fontLigatures": true,
+    "editor.minimap.enabled": true,
+    "editor.cursorBlinking": "smooth",
+    "editor.cursorSmoothCaretAnimation": "on",
+    "editor.cursorWidth": 1,
+    "editor.cursorStyle": "block",
+    // font 
+    "editor.fontSize": 16,
+    "editor.lineHeight": 22,
+    "editor.fontFamily": "JetBrainsMono Nerd Font", // added by Nikos
+    "editor.fontLigatures": true,
+    // bebug console
+    "debug.console.fontFamily": "JetBrainsMono Nerd Font",// added by Nikos
+    "debug.console.fontSize": 16,
+    "debug.console.lineHeight": 22,
+    // terminal
+    "terminal.integrated.lineHeight": 1.2,
+    "terminal.integrated.letterSpacing": 1.2,
+    "terminal.integrated.fontSize": 14,
+    "terminal.integrated.fontLigatures.enabled": true,
+    "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font",
+    "workbench.editor.highlightModifiedTabs": true,
+    "workbench.editorAssociations": {
+        "*.xlsx": "default"
+    },
+    "diffEditor.ignoreTrimWhitespace": false,
+    "debug.openDebug": "openOnSessionStart",
+    "debug.showInStatusBar": "always",    
+    // TODO
+    "todo-tree.highlights.defaultHighlight": {
+        "icon": "alert",
+        "type": "text-and-comment",
+        "foreground": "black",
+        "background": "white",
+        "opacity": 50,
+        "iconColour": "blue",
+        "gutterIcon": true
+    },
+    "todo-tree.highlights.customHighlight": {
+        "TODO": {
+        "icon": "checkbox",
+        "foreground": "black",
+        "background": "yellow",
+        "iconColour": "yellow"
+        },
+        "NOTE": {
+        "icon": "note",
+        "foreground": "white",
+        "background": "cornflowerblue",
+        "iconColour": "cornflowerblue"
+        },
+        "USEFUL": {
+        "icon": "verified",
+        "foreground": "black",
+        "background": "mediumaquamarine",
+        "iconColour": "mediumaquamarine"
+        },
+        "COMMENT": {
+        "icon": "comment",
+        "foreground": "white",
+        "background": "gray",
+        "iconColour": "white"
+        },
+        "LEARN": {
+        "icon": "bookmark",
+        "foreground": "white",
+        "background": "hotpink",
+        "iconColour": "hotpink"
+        },
+        "FIXME": {
+        "icon": "tools",
+        "foreground": "black",
+        "background": "burlywood",
+        "iconColour": "burlywood"
+        },
+        "RECHECK": {
+        "icon": "codescan",
+        "foreground": "white",
+        "background": "chocolate",
+        "iconColour": "chocolate"
+        },
+        "INCOMPLETE": {
+        "icon": "alert",
+        "foreground": "white",
+        "background": "mediumvioletred",
+        "iconColour": "mediumvioletred"
+        },
+        "BUG": {
+        "icon": "bug",
+        "foreground": "white",
+        "background": "crimson",
+        "iconColour": "crimson"
+        },
+        "STEP": {
+        "icon": "rocket",
+        "foreground": "black",
+        "background": "mediumaquamarine",
+        "iconColour": "mediumaquamarine"
+        },
+        // "POST": {
+        // "icon": "share",
+        // "foreground": "white",
+        // "background": "green",
+        // "iconColour": "green"
+        // },
+        "[ ]": {
+        "icon": "check",
+        "foreground": "black",
+        "background": "white",
+        "iconColour": "white"
+        },
+        "[x]": {
+        "icon": "check",
+        "foreground": "white",
+        "background": "green",
+        "iconColour": "green"
+        },
+        "CUSTOM": {
+        "icon": "webhook",
+        "foreground": "white",
+        "background": "magenta",//darkorange
+        "iconColour": "magenta"
+        },
+        "IMPORTANT": {
+        "icon": "light-bulb",
+        "foreground": "black",
+        "background": "cyan",//darkorange //indigo
+        "iconColour": "cyan"
+        },
+        "ATTENTION": {
+        "icon": "stop",
+        "foreground": "black",
+        "background": "darkorange",//darkorange //indigo
+        "iconColour": "darkorange"
+        }
+    },
+    "todo-tree.general.tags": [
+        "BUG",
+        "STEP",
+        "HACK",
+        "FIXME",
+        "RECHECK",
+        "INCOMPLETE",
+        "TODO",
+        "NOTE",
+        // "POST",
+        "USEFUL",
+        "LEARN",
+        "COMMENT",
+        "[ ]",
+        "[x]",
+        "CUSTOM",
+        "IMPORTANT",
+        "STEP",
+        "ATTENTION"
+    ],
+    "todo-tree.regex.regex": "(//|#|<!--|;|/\\*|^|^\\s*(-|\\d+.))\\s*($TAGS).*(\\n\\s*//\\s{2,}.*)*",
+    "todo-tree.general.tagGroups": {
+    },
+    "aws.telemetry": false,
+    "indentRainbow.indicatorStyle": "light",
+    "editor.tokenColorCustomizations": {
+      "textMateRules": [
+        {
+          "scope": [
+            // the following elements will be in italic
+            "comment",
+            "storage.modifier", // static keyword
+            "storage.type.php", // typehints in methods keyword
+            "keyword.other.new.php", // new
+            "entity.other.attribute-name", // html attributes
+            "fenced_code.block.language.markdown", // markdown language modifier
+            "keyword", //import, export, return…
+            "storage.modifier", //static keyword
+            "storage.type", //class keyword
+            "keyword.control",
+            "constant.language",
+            "entity.other.attribute-name",
+            "entity.name.method",
+            "keyword.control.import.ts",
+            "keyword.control.import.tsx",
+            "keyword.control.import.js",
+            "keyword.control.flow.js",
+            "keyword.control.from.js",
+            "keyword.control.from.ts",
+            "keyword.control.from.tsx"
+          ],
+          "settings": {
+            "fontStyle": "italic"
+          }
+        },
+        {
+          "scope": [
+            // the following elements will be displayed in bold
+            "entity.name.type.class" // class names
+          ],
+          "settings": {
+            "fontStyle": ""
+          }
+        },
+        {
+          "scope": [
+            // the following elements will be displayed in bold and italic
+            "entity.name.section.markdown" // markdown headlines
+          ],
+          "settings": {
+            "fontStyle": "italic"
+          }
+        },
+        {
+          "scope": [
+            // the following elements will be excluded from italics
+            //   (VSCode has some defaults for italics)
+            "invalid",
+            "keyword.operator",
+            "constant.numeric.css",
+            "keyword.other.unit.px.css",
+            "constant.numeric.decimal.js",
+            "constant.numeric.json",
+            "comment.block",
+            "entity.other.attribute-name.class.css"
+          ],
+          "settings": {
+            "fontStyle": ""
+          }
+        }
+      ]
+    },
+    "yaml.customTags": [
+      "!And",
+      "!And sequence",
+      "!If",
+      "!If sequence",
+      "!Not",
+      "!Not sequence",
+      "!Equals",
+      "!Equals sequence",
+      "!Or",
+      "!Or sequence",
+      "!FindInMap",
+      "!FindInMap sequence",
+      "!Base64",
+      "!Join",
+      "!Join sequence",
+      "!Cidr",
+      "!Ref",
+      "!Sub",
+      "!Sub sequence",
+      "!GetAtt",
+      "!GetAZs",
+      "!ImportValue",
+      "!ImportValue sequence",
+      "!Select",
+      "!Select sequence",
+      "!Split",
+      "!Split sequence"
+    ],
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "[json]": {
+      "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "github.copilot.nextEditSuggestions.enabled": true,
+    "docker.extension.enableComposeLanguageServer": false,
+    "hediet.vscode-drawio.resizeImages": null,
+    "jupyter.askForKernelRestart": false,
+    "python.defaultInterpreterPath": "/opt/homebrew/bin/python3",
+    "gitlens.ai.model": "vscode",
+    "gitlens.ai.vscode.model": "copilot:gpt-4.1"
+}
